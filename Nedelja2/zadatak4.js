@@ -1,5 +1,10 @@
-let broj=5;
-while (broj<=5000) {
-    console.log(broj);
-    broj=broj+5;
+let i = 0;
+let counter = 0;
+while (counter<1000){
+    i += 1;
+    if(i%5==0){
+        counter+=1;
+        console.log(i);
+    }
 }
+
