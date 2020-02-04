@@ -1,10 +1,8 @@
 let i = 0;
 let counter = 0;
-while (counter<1000){
-    i += 1;
+for (i; counter<=1000; i++){
     if(i%5==0){
-        counter+=1;
+        counter++;
         console.log(i);
     }
 }
-
