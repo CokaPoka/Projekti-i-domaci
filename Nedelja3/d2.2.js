@@ -1,12 +1,6 @@
-let r = 25;
-let cena = 1000;
-let P = Math.PI * r ** 2;
-let cenaCm = cena / P;
-
-function getCena(cenaCm){
-    return `${cenaCm}`;
+function getCenaCm(r, cena) {
+    return cena / (r ** 2 * Math.PI);
 
 }
- let cenaPiceCm= getCena(cenaCm);
- console.log(`${cenaPiceCm}`);
- 
+
+console.log(`${getCenaCm(20, 1000)}`);
