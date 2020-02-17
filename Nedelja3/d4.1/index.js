@@ -17,6 +17,7 @@ btnSubmit.addEventListener('click', () => {
         let time = new Date();
         submit.innerHTML = `You ordered ${count} pizza <br> at ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()} <br>
         on ${time.getDate()}.${time.getMonth()+1}.${time.getFullYear()}.` 
+        count = 0;
 
     }
 })
@@ -39,6 +40,7 @@ btnSubmit2.addEventListener('click', () => {
         let time = new Date();
         submit2.innerHTML = `You ordered ${count2} pizza <br> at ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()} <br>
         on ${time.getDate()}.${time.getMonth() + 1}.${time.getFullYear()}.`
+        count2 = 0;
 
     }
 })
