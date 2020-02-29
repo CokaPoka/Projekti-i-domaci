@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <p class="header-text">Dostupan budzet u Januaru 2020:</p>
+        <div class="budzet">
+
+        </div>
+        <div class="prihod">
+            <div>
+                <p>PRIHOD</p>
+            </div>
+            <div class="ukupan-prihod">
+
+            </div>
+        </div>
+        <div class="rashod">
+            <div>
+                <p>RASHOD</p>
+            </div>
+            <div class="ukupan-rashod">
+
+            </div>
+        </div>
+    </header>
+    <form class="form">
+        <select name="zarada" id="zarada">
+            <option value="" selected disabled hidden>-</option>
+            <option value="Prihodi">Prihodi</option>
+            <option value="Rashodi">Rashodi</option>
+        </select>
+        <input type="text" name="opis" id="opis" placeholder="Opis">
+        <input type="number" name="iznos" id="iznos" placeholder="Iznos">
+        <button id="btn-confirm">&#x2714;&#xFE0F;</button>     
+    </form>
+    <div class="list">
+        <div class="list-prihodi">
+            <p class="list-prihodi-name">PRIHODI</p> 
+            <div class="list-item-prihodi">
+
+            </div>
+
+        </div>
+        <div class="list-rashodi">
+            <p class="list-rashodi-name">RASHODI</p>
+            <div class="list-item-rashodi">
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

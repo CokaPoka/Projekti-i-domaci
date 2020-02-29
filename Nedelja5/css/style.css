@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    font-family: 'Noto Sans';
+}
+
+.header{
+    height: 250px;
+    width: 100%;
+    background-image: linear-gradient(#a6a6a8, #a8abbc );
+}
+
+.header-text {
+    padding: 20px 0;
+    font-size: 25px;
+    color: #f9f9f9;
+}
+
+.ostatak-item {
+    font-size: 30px;
+    color:#f9f9f9;
+    letter-spacing: 1px;
+}
+
+.budzet {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.prihod {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #40bfc1;
+    height: 40px;
+    width: 300px;
+    margin: 10px auto;
+}
+p {
+    font-size: 15px;
+}
+
+.rashod {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #f0134d;
+    height: 40px;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.form {
+    padding: 15px;
+    background-color: #eff0f4;
+}
+
+select {  
+  width: 90px;
+  padding: 12px 5px;
+  margin: 4px 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#opis {
+  width: 450px;
+  padding: 12px 20px;
+  margin: 4px 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#iznos {
+  width: 150px;
+  padding: 12px 20px;
+  margin: 4px 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#btn-confirm {
+    border-radius: 50%;
+    line-height: 10px;
+    /* color:#40bfc1 ; */
+    font-size: 15px;
+    padding: 10px 10px;
+    border: solid  2px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+ }
+
+.list-prihodi, .list-rashodi {
+    width: 30%;
+    text-align: left;
+    margin: 40px 30px;
+}
+
+.list-prihodi-name {
+    color: #40bfc1;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.list-rashodi-name {
+    color: #f0134d;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.list-item-prihodi {
+    display: block;
+}
+
+.list-item {
+    display: inline-block;
+    width: 300px;
+    padding: 5px 0;
+}
+
+.list-item-right {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100px;
+    padding: 5px 0;
+    
+}
+.list-item-rashodi {
+    display: block;
+}
+
+.list-item2 {
+    display: inline-block;
+    width: 300px;
+    padding: 5px 0;
+}
+
+.list-item2-right {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100px;
+    padding: 5px 0;
+    
+}
