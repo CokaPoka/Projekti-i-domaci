@@ -45,7 +45,9 @@ btnPotvrda.addEventListener('click', (e) => {
         }
         counter++;
         tasksRashodi.push(taskRashodi);
+              
         addRashodiHTML(taskRashodi);
+              
         opis.value = '';
         iznos.value = '';
         currDesc = '';
@@ -64,7 +66,7 @@ btnPotvrda.addEventListener('click', (e) => {
         currDesc = '';
         currAmount = '';
     }
- 
+    
     var s = sumPrihodi(tasksPrihodi);
 
     console.log(s);
@@ -166,7 +168,7 @@ const addRashodiHTML = (taskRashodi) => {
 
     taskDesc2.innerText = taskRashodi.desc;
     taskAmount2.innerText = `- ${taskRashodi.amount}`;
-    // procentiRashoda.innerText = `${procenti}%`;
+    procentiRashoda.innerText = Math.round(`${parseInt(taskRashodi.amount,10)}`*100/`${sumPrihodi(tasksPrihodi)}`)+`%`;
 
     listItem2.appendChild(taskDesc2);
     listItem2Right.appendChild(taskAmount2);
@@ -206,9 +208,13 @@ const addUkupanPrihodHTML = (s) => {
 const addUkupanRashodHTML = (sRashod) => {
     ukupanRashod.innerHTML = '';
     let addRashod = document.createElement('p');
-    addRashod.className = 'ukupan-rashod-item'
-    addRashod.innerText = `-${sRashod}`
+    let addRashodProcenat = document.createElement('p');
+    addRashod.className = 'ukupan-rashod-item';
+    addRashodProcenat.className = 'ukupan-rashod-procenat';
+    addRashod.innerText = `-${sRashod}`;
+    addRashodProcenat.innerText = Math.round(`${sRashod}` * 100 / `${sumPrihodi(tasksPrihodi)}`)+`%`;
     ukupanRashod.appendChild(addRashod);
+    ukupanRashod.appendChild(addRashodProcenat);
 
 }
 
