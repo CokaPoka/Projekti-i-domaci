@@ -15,7 +15,7 @@ const App = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (name === '' || number === '') {
+        if (name.trim() === '' && number.trim() === '') {
             setError("Popunite sva polja!")
             return
         }
@@ -68,7 +68,7 @@ const App = () => {
                     </div>
                 }
                 {filteredCont &&
-                    <div className="search-list">
+                    <div className="search">
                         {filteredCont.map((contact) =>
                             <>
                                 <p>{contact.name}</p>
