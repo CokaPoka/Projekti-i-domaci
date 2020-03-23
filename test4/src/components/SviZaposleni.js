@@ -12,10 +12,10 @@ export const SviZaposleni = () => {
     
 
    
-  
+    const ucitajZaposlene=() =>{ sviZaposleni().then((res) => setZaposleni(res.data.data))}
 
     useEffect(() => {
-        sviZaposleni().then((res) => setZaposleni(res.data.data))
+       ucitajZaposlene()
     }, [])
 
     const handleSelect = (e) => {
@@ -36,7 +36,7 @@ export const SviZaposleni = () => {
             </div>
             <div className='emloyee-list'>
             {zaposleni.slice(0,select).map(radnik => <Radnik key={radnik.id} radnik={radnik} />)}
-                <Forma />
+                <Forma ucitajZaposlene={ucitajZaposlene}/>
             </div>
             
         </>

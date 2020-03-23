@@ -1,9 +1,9 @@
 import React from 'react';
-import { dodajZaposlenog, sviZaposleni } from '../services/service';
+import { dodajZaposlenog } from '../services/service';
 
 
 
-export const Forma = () =>{
+export const Forma = ({ucitajZaposlene}) =>{
     
     return (
         <div className="form">
@@ -21,8 +21,8 @@ export const Forma = () =>{
                 
                 
                 dodajZaposlenog(name, salary, age)
-                    .then(({data}) => {
-                        sviZaposleni(data.name,data.salary,data.age);
+                    .then(() => {
+                        ucitajZaposlene()
                     })
              console.log(name, salary, age)
             }}>posalji</button>
